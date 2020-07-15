@@ -1,0 +1,21 @@
+# Function Library for other scripts
+# Authored by Sajjan Janardhanan on 11/29/2018
+
+func_header()
+{
+  i_txt=$1
+  echo -e ${FONT_HIGHLIGHT}"\n----< ${i_txt} >----"$COLOR_NONE
+}
+
+func_subheader()
+{
+  i_txt=$1
+  echo -e ${COLOR_RED}"\n----< ${i_txt} >----"$COLOR_NONE
+}
+
+func_line()
+{
+  echo -e ${COLOR_RED}
+  printf '~%.0s' {1..80}
+  echo -e ${COLOR_NONE}"\n"
+}
